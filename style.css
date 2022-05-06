@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone-colum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone-colum img{
+    height: 50rem;
+}
+
+.form-colum{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+.formulario:nth-child(1){
+    min-height: 19rem;
+}
+
+.mintagram-logo{
+    height: 3rem;
+}
+
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img{
+    height: 10rem;
+}
+
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.logout{
+    color: #0095f6;
+    margin-top: 5px;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-azul{
+    color: #0095f6;
+}
+
+.get-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url(/img/apple-button.png);
+}
+
+.app-download:nth-child(2){
+    background-image: url(/img/googleplay-button.png);
+}
+
+@media (max-width: 120px){
+ .page-wraper{
+     width: 90%;
+ }   
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+    .page-wraper{
+        width: 90%;
+    }
+
+    .phone-colum{
+        display: none;
+    }
+
+    .form-colum{
+        width: 100%;
+    }
+
+    .formulario{
+        border: 1px solid transparent;
+    }
+}
